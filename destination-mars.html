@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+    <style>
+      body {
+        background-image: url(./assets/destination/background-destination-desktop.jpg);
+      }
+      @media (max-width: 990px) {
+        body {
+          background-image: url(./assets/destination/background-destination-tablet.jpg);
+        }
+      }
+      @media (max-width: 576px) {
+        body {
+          background-image: url(./assets/destination/background-destination-mobile.jpg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="navbar navbar-expand-sm position-relative">
+          <div class="container">
+            <div class="navbar-brand">
+              <img
+                class="img-fluid"
+                src="./assets/shared/logo.svg"
+                alt="logo"
+              />
+            </div>
+            <button
+              type="button"
+              class="navbar-toggler border-0 shadow-none"
+              data-bs-target="#main"
+              data-bs-toggle="collapse"
+              aria-controls="main"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <img
+                class="hamburger"
+                src="./assets/shared/icon-hamburger.svg"
+                alt="icon-hamburger"
+              />
+              <img class="close" src="./assets/shared/icon-close.svg" alt="icon-close">
+            </button>
+            <div class="collapse navbar-collapse" id="main">
+              <ul class="navbar-nav ms-auto gap-4 position-absolute">
+                <li class="nav-item">
+                  <a href="./index.html" class="nav-link"
+                    ><span>00</span> Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="./destination-mars.html"
+                    class="nav-link page-item active"
+                    ><span>01</span> Destination</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="./crew-engineer.html" class="nav-link"
+                    ><span>02</span> Crew</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="./technology-vehicle.html" class="nav-link"
+                    ><span>03</span> Technology</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="destination ps-sm-4 pt-md-5">
+        <div class="container">
+          <div
+            class="row justify-content-between align-items-center gap-3 gap-lg-0"
+          >
+            <div class="pick col-12 col-lg-6 text-center text-lg-start">
+              <p class="text-uppercase mb-3 mb-lg-5">
+                <span class="text-white-50">01</span> Pick your destination
+              </p>
+              <div class="image text-center text-lg-end pe-0 pe-lg-5">
+                <img
+                  class="img-fluid destination-image"
+                  src="./assets/destination/image-mars.png"
+                  alt="destination-image"
+                />
+              </div>
+            </div>
+
+            <div
+              class="info col-12 col-lg-5 p-0 pe-lg-5 text-center text-lg-start"
+            >
+              <ul
+                class="list-unstyled d-flex gap-4 justify-content-center justify-content-lg-start"
+              >
+                <li><span class="pick-btn text-uppercase">Moon</span></li>
+                <li>
+                  <span class="pick-btn text-uppercase active">Mars</span>
+                </li>
+                <li><span class="pick-btn text-uppercase">Europa</span></li>
+                <li><span class="pick-btn text-uppercase">Titan</span></li>
+              </ul>
+              <h1 class="name text-uppercase mt-5">Mars</h1>
+              <p class="description pb-5">
+                Don’t forget to pack your hiking boots. You’ll need them to
+                tackle Olympus Mons, the tallest planetary mountain in our solar
+                system. It’s two and a half times the size of Everest!
+              </p>
+              <div
+                class="calc d-flex justify-content-between flex-column flex-lg-row align-items-center pt-4"
+              >
+                <div>
+                  <p class="text-uppercase m-0">Avg. distance</p>
+                  <p class="text-uppercase distance">225 mil. km</p>
+                </div>
+                <div>
+                  <p class="text-uppercase m-0">Est. travel time</p>
+                  <p class="text-uppercase travel">9 months</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

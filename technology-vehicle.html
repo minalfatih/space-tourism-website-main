@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+    <style>
+      body {
+        background-image: url(./assets/technology/background-technology-desktop.jpg);
+      }
+      @media (max-width: 990px) {
+        body {
+          background-image: url(./assets/technology/background-technology-tablet.jpg);
+        }
+      }
+      @media (max-width: 576px) {
+        body {
+          background-image: url(./assets/technology/background-technology-mobile.jpg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="navbar navbar-expand-sm position-relative">
+          <div class="container">
+            <div class="navbar-brand">
+              <img
+                class="img-fluid"
+                src="./assets/shared/logo.svg"
+                alt="logo"
+              />
+            </div>
+            <button
+              type="button"
+              class="navbar-toggler border-0 shadow-none"
+              data-bs-target="#main"
+              data-bs-toggle="collapse"
+              aria-controls="main"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <img
+                class="hamburger"
+                src="./assets/shared/icon-hamburger.svg"
+                alt="icon-hamburger"
+              />
+              <img class="close" src="./assets/shared/icon-close.svg" alt="icon-close">
+            </button>
+            <div class="collapse navbar-collapse" id="main">
+              <ul class="navbar-nav ms-auto gap-4 position-absolute">
+                <li class="nav-item">
+                  <a href="./index.html" class="nav-link"
+                    ><span>00</span> Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="./destination-mars.html" class="nav-link"
+                    ><span>01</span> Destination</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="./crew-engineer.html" class="nav-link"
+                    ><span>02</span> Crew</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="./technology-vehicle.html"
+                    class="nav-link page-item active"
+                    ><span>03</span> Technology</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="technology justify-content-lg-end">
+        <div class="container m-lg-0">
+          <p class="text-uppercase mb-0 mb-lg-5 text-center text-lg-start">
+            <span class="text-white-50">03</span> Space launch 101
+          </p>
+          <div class="row flex-column-reverse flex-lg-row align-items-center">
+            <div class="space col-12 col-lg-6 text-center text-lg-start">
+              <div
+                class="info d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-start gap-4 gap-lg-5"
+              >
+                <ul
+                  class="num list-unstyled d-flex flex-row flex-lg-column justify-content-between gap-4 m-0"
+                >
+                  <li><span class="active">1</span></li>
+                  <li><span>2</span></li>
+                  <li><span>3</span></li>
+                </ul>
+
+                <div>
+                  <span class="text-uppercase d-block mb-2"
+                    >The terminology...</span
+                  >
+                  <h1 class="text-uppercase name">Launch vehicle</h1>
+                  <p class="description pe-0 pe-lg-5">
+                    A launch vehicle or carrier rocket is a rocket-propelled
+                    vehicle used to carry a payload from Earth's surface to
+                    space, usually to Earth orbit or beyond. Our WEB-X carrier
+                    rocket is the most powerful in operation. Standing 150
+                    metres tall, it's quite an awe-inspiring sight on the launch
+                    pad!
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="image col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end p-0 mt-5 mb-5 m-lg-0"
+            >
+              <img
+                class="img-fluid technology-image portrait"
+                src="./assets/technology/image-launch-vehicle-portrait.jpg"
+                alt="technology-image"
+              />
+              <img
+                class="img-fluid technology-image landscape"
+                src="./assets/technology/image-launch-vehicle-landscape.jpg"
+                alt="technology-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
